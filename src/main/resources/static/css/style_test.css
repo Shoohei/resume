@@ -1,0 +1,89 @@
+
+
+p, .intro
+{
+    color: gray;
+}
+
+/* Une balise dans une autre */
+h3 em
+{
+    color: green;
+}
+
+/* Une balise qui en suit une autre */
+h3 + p
+{
+    color: red;
+}
+
+/* Une balise possédant un attribut */
+h1[class]
+{
+    color: aqua;
+}
+/* Une balise possédant un attribut + valeur */
+h1[class="intro"]
+{
+    color: beige;
+}
+
+/* Une balise possédant un attribut qui contient valeur */
+h1[class*="int"]
+{
+    color: blueviolet;
+}
+
+.imageflottante
+{
+    float: left;
+}
+
+.dessous
+{
+    clear: both;
+}
+
+a /* Liens par défaut (non survolés) */
+{
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+    text-decoration: underline;
+    color: green;
+}
+
+a:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: #FFCC66;
+}
+a:focus /* Quand le visiteur sélectionne le lien */
+{
+    background-color: #FFCC66;
+}
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+    color: #AAA; /* Appliquer une couleur grise */
+}
+
+p
+{
+    width: 50%;
+    min-width: 400px;
+}
+
+/*
+.class
+{
+
+}
+
+#id
+{
+
+}
+*/

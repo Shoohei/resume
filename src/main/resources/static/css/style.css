@@ -1,0 +1,236 @@
+body {
+    color: white;
+    background-color: #474747;
+    background: radial-gradient(circle, #686868, #474747);
+    margin: 0px;
+    word-wrap: break-word;
+
+    text-shadow: 1px 1px 2px #e5e5e5;
+    font-family: Arial, "Times New Roman", Verdana, sans-serif;
+}
+
+.page_height {
+    width: 80%;
+    min-width: 800px;
+    margin: auto;
+}
+
+#page_bloc {
+
+}
+
+#bandeau_haut {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 0px;
+    text-shadow: 1px 2px 2px black;
+
+}
+
+#lien_contact a
+{
+    color: blue;
+}
+#lien_contact a
+{
+    color: blue;
+}
+
+
+#bandeau_haut ul {
+    margin: 5px;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+#bandeau_haut li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#bandeau_haut a {
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+
+#bandeau_haut a:hover {
+    border-bottom: 3px solid #760001;
+}
+
+#bandeau_haut a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+    color: white;
+}
+
+#lien_cv {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+#bandeau_entete {
+    margin: 0px;
+    background-color: #760001;
+    background: radial-gradient(circle, #a30000, #760001);
+    padding: 5px;
+    box-shadow: 0px 6px 10px black;
+    text-shadow: 2px 2px 4px black;
+}
+
+.colonne_left {
+    width: 20%;
+    float: left;
+}
+
+.section_center {
+    width: 44%;
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.section_right {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+article {
+    margin-top: 30px;
+    border: 2px solid #760001;
+    border-bottom: 5px solid #760001;
+    background-color: #cccccc;
+    font-size: medium;
+    box-shadow: 3px 6px 25px black;
+    border-radius: 4px;
+}
+
+.entete_article {
+    background-color: #760001;
+    background: radial-gradient(circle, #a30000, #760001);
+    text-align: center;
+    margin: 0px;
+    padding: 2px;
+    text-shadow: 1px 2px 2px black;
+    font-size: large;
+}
+
+.corps_article {
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    color: black; /* Appliquer une couleur grise */
+    font-size: small;
+    font-family: Verdana, "Times New Roman", Arial, sans-serif;
+}
+.corps_article a:hover
+{
+    color: blue; /* Appliquer une couleur grise */
+}
+.corps_article a
+{
+    color: black; /* Appliquer une couleur grise */
+}
+
+#nom_prenom {
+    margin: 0px;
+    text-align: center;
+    padding-right: 10%;
+    font-size: xx-large;
+    color: white;
+}
+ul {
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.ul_niveau_1 li {
+    list-style-type: square;                /* style de la puce */
+    list-style-position : outside;          /* position de la puce */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.ul_niveau_2 li {
+    list-style-type: circle;                /* style de la puce */
+    list-style-position : outside;          /* position de la puce */
+    margin: 0px;
+}
+
+#intitule_poste {
+    margin: 0px;
+    font-size: x-large;
+    width: 50%;
+    display: inline-block;
+}
+
+#anciennete {
+    font-size: x-large;
+    margin: 0px;
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+
+}
+
+#avatar {
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+    margin-bottom: 10px;
+
+    box-shadow: 1px 1px 10px #965454;
+}
+
+.dessous {
+    clear: both;
+}
+
+.exp_bloc
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.exp_inter_bloc
+{
+    border-bottom: 1px solid #760001;
+    box-shadow: 1px 1px 2px #965454;
+}
+
+.exp_date
+{
+
+}
+.exp_bloc h1
+{
+    font-weight: normal;
+    font-style: normal;
+    font-size: small;
+    font-family: Verdana, "Times New Roman", Arial, sans-serif;
+    margin: 0px;
+}
+
+.exp_resume
+{
+    border-left: 2px solid #e5e5e5;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-left: 5px;
+    font-size: small;
+    font-family: Verdana, "Times New Roman", Arial, sans-serif;
+}
+.exp_detail
+{
+    display: none;
+    font-size: small;
+    font-family: Verdana, "Times New Roman", Arial, sans-serif;
+}
+.exp_techno
+{
+    margin-top: 15px;
+    font-size: x-small;
+    margin-left: 30px;
+
+}

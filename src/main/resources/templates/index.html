@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Tony Rouillard</title>
+</head>
+<body ng-app="app" ng-controller="MainController">
+<nav id="bandeau_haut">
+    <ul>
+        <li><a href="#" id="lien_cv">Tony Rouillard</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=shoohei.rabbit" target="_blank">Rabbit Battery</a>
+        </li>
+    </ul>
+</nav>
+
+<header id="bandeau_entete">
+    <div class="page_height">
+        <p id="nom_prenom">Tony Rouillard</p>
+
+        <div id="intitule_poste">Software Engineer Java EE / Android</div>
+        <div id="anciennete">{{ calculateAge(user.startJobDate) }} years of experience</div>
+
+    </div>
+</header>
+
+<div class="page_height" id="page_bloc">
+
+
+    <aside class="colonne_left">
+        <article>
+            <h1 class="entete_article">Introduction</h1>
+
+            <p class="corps_article">
+                <img id="avatar" alt="Photo" src="../img/avatar.jpg" />
+                {{ calculateAge(user.birthday) }} years old<br/>
+                Tokyo, Japan
+            </p>
+
+            <p class="dessous"></p>
+
+            <p class="corps_article">
+                Look for a job in <strong>Tokyo</strong>. <br/>Advanced level in <strong>Java, Java EE and Android</strong> programming. I like to improve my skills and challenge myself.
+            </p>
+
+            <h1 class="entete_article">Contact</h1>
+
+            <p class="corps_article" id="lien_contact">
+                <a href="mailto:rouillardtonypro@gmail.com" target="_blank">rouillardtonypro@gmail.com</a>
+            </p>
+        </article>
+
+        <article>
+            <h1 class="entete_article">Download</h1>
+
+            <div class="corps_article">
+                <ul class="ul_niveau_2">
+                    <li><a href="../resource/Resume_TonyRouillard_20180201.pdf" target="_blank">CV Tony Rouillard.pdf</a></li>
+                </ul>
+            </div>
+            <h1 class="entete_article">Link</h1>
+
+            <div class="corps_article">
+                <ul class="ul_niveau_2">
+                    <li><a href="https://play.google.com/store/apps/details?id=shoohei.rabbit" target="_blank">Rabbit Battery !</a></li>
+                    <li><a href="http://www.linkedin.com/pub/tony-rouillard" target="_blank">LinkedIn</a></li>
+                    <li><a href="http://fr.viadeo.com/fr/profile/tony.rouillard" target="_blank">Viadeo</a></li>
+                </ul>
+            </div>
+        </article>
+    </aside>
+
+    <section class="section_center">
+        <article>
+            <h1 class="entete_article">Work experience</h1>
+
+            <div class="corps_article">
+                <div class="exp_bloc">
+
+                    <h1 class="exp_titre">
+                        <span class="exp_date">03/2015 - 06/2017</span>: <strong>Software Engineer Java EE</strong>, ALTECA
+                    </h1>
+
+                    <div class="exp_resume">
+                        In a team of 6 persons with a really well applied Scrum management context. I have worked on creating user interfaces (GWT) and services (EJB3 and WebServices) in the accounting part of a hospital software for the MiPIH (Midi-Picardie Informatique Hospitalière) company. 
+                    </div>
+                    <div class="exp_techno">
+                    	Java 7, Scrum, Jenkins, Eclipse, SqlDeveloper, SVN, GIT, JMS, Maven, JBoss, GWT, EJB3.
+                    </div>
+                </div>
+                <div class="exp_inter_bloc"></div>
+                <div class="exp_bloc">
+
+                    <h1 class="exp_titre">
+                        <span class="exp_date">03/2014 - 02/2015</span>: <strong>Software Engineer Java EE</strong>, ALTECA
+                    </h1>
+
+                    <div class="exp_resume">
+                         In a team of 4 persons for the CPCom company. I have worked on creating web services in the insurance field in close collaboration with other persons (who worked on Talend, PHP). 
+                    </div>
+                    <div class="exp_techno">
+                    	Java 7, Spring Tool Suite, SVN, SOAP Web Services, Tomcat 6, PostGreSql, Maven.
+                    </div>
+                </div>
+                <div class="exp_inter_bloc"></div>
+                <div class="exp_bloc">
+
+                    <h1 class="exp_titre">
+                        <span class="exp_date">07/2013 - 02/2014</span>: <strong>Software Engineer Java EE</strong>, ALTECA
+                    </h1>
+
+                    <div class="exp_resume">
+                         In a team of 5 persons for the iBP (informatique Banque Populaire) company. I have worked on creating user interfaces and services in the accounting field.
+                    </div>
+                    <div class="exp_techno">
+                    	Framework Equinoxe, Dreamviewer, Rational Rose, Rational Application Developer.
+                    </div>
+                </div>
+                <div class="exp_inter_bloc"></div>
+                <div class="exp_bloc">
+
+                    <h1 class="exp_titre">
+                        <span class="exp_date">01/2013 - 06/2013</span>: <strong>Software Engineer Java EE</strong>, SII
+                    </h1>
+
+                    <div class="exp_resume">
+                         In a team of 4 persons for the DGAC (Direction Générale de l’Aviation Civile). I have worked on creating user interfaces (Swing and JSF) and services in the aeronautics field, allowing the user to input the air traffic.
+                    </div>
+                    <div class="exp_techno">
+                    	JBoss, EJB3, WebServices, Swing, JSF, Hibernate, SVN, Guava.
+                    </div>
+                </div>
+                <div class="exp_inter_bloc"></div>
+                <div class="exp_bloc">
+
+                    <h1 class="exp_titre">
+                        <span class="exp_date">01/2012 - 01/2013</span>: <strong>Software Engineer Java EE</strong>, SII
+                    </h1>
+
+                    <div class="exp_resume">
+                         In a team of 3 persons for the DGAC (Direction Générale de l’Aviation Civile). I have worked on creating user interfaces (Swing) and services in the aeronautics field, allowing the user to input the incidents occurred in aircrafts.
+                    </div>
+                    <div class="exp_techno">
+                    	Tomcat, Swing, Hibernate, PostgreSQL, SVN.
+                    </div>
+                </div>
+                <div class="exp_inter_bloc"></div>
+                <div class="exp_bloc">
+
+                    <h1 class="exp_titre">
+                        <span class="exp_date">07/2011 - 12/2011</span>: <strong>Software Engineer Java EE</strong>, SII
+                    </h1>
+
+                    <div class="exp_resume">
+                         In a team of 15 persons for the MSA (Mutualité Sociale Agricole) company. I have worked on creating user interfaces.
+                    </div>
+                    <div class="exp_techno">
+                    	Weblogic, JSP/Servlet, Struts, Hibernate, SVN.
+                    </div>
+                </div>
+                <div class="exp_inter_bloc"></div>
+                <div class="exp_bloc">
+
+                    <h1 class="exp_titre">
+                        <span class="exp_date">09/2010 - 06/2011</span>: <strong>Software Engineer Java EE</strong>, SII
+                    </h1>
+
+                    <div class="exp_resume">
+                         In a team of 5 persons for Météo-France. I have added new features on the previous version of the software. Then on my own, I have upgraded the version of JBoss from 4.2 to 5.1 and fixed some issues during the guarantee period.
+                    </div>
+                    <div class="exp_techno">
+                    	JBoss, EJB3, Spring, Swing, JMS, Hibernate, PostgreSQL, Quartz, XLS, Batik, SVN.
+                    </div>
+                </div>
+                <div class="exp_inter_bloc"></div>
+            </div>
+        </article>
+
+        <article>
+            <h1 class="entete_article">Education (Master degree)</h1>
+
+            <div class="corps_article">
+                <ul class="ul_niveau_1">
+                    <li>2010: <em title="Master Professionnel Productique: Ingénierie des Systèmes et Informatisation"><strong><a
+                            href="http://www.masterproductique.ups-tlse.fr/" target="_blank">Master Pro' Productique</a></strong></em>
+                        at <a href="http://www.univ-tlse3.fr/" target="_blank">Paul Sabatier University</a>, Toulouse.
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+
+    <section class="section_right">
+    	<article>
+            <h1 class="entete_article">Personal project</h1>
+
+            <div class="corps_article">
+                <div class="exp_bloc">
+                    <h1 class="exp_titre">
+                        <span class="exp_date">03/2012 - Now</span>: <strong>Software Engineer Android</strong>
+                    </h1>
+
+                    <div class="exp_resume">
+                        On my free time, I'm working on an Android application named <strong><a href="https://play.google.com/store/apps/details?id=shoohei.rabbit" target="_blank">Rabbit Battery</a></strong>. It allows the user to save precious hours of battery life. It’s available on Google Play. 
+                    </div>
+                    <div class="exp_detail">
+
+                    </div>
+                    <div class="exp_techno">
+                        Android Studio, RootTools, Proguard, Gradle, GIT. 
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h1 class="entete_article">Skills</h1>
+
+            <div class="corps_article">
+                <ul class="ul_niveau_1">
+                    <li>Computer languages:
+                        <ul class="ul_niveau_2">
+                            <li><strong>Java</strong>, <strong>Java EE</strong>, <strong>Android</strong>, GWT, HTML5.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Technologies:
+                        <ul class="ul_niveau_2">
+                            <li><strong>JBoss</strong>, <strong>Tomcat</strong>.</li>
+                            <li><strong>EJB3</strong>, JMS, <strong>WebServices</strong>, <strong>Swing</strong>, JWS,
+                                <strong>JPA/Hibernate</strong>, <strong>Spring</strong>, JSF.
+                            </li>
+                            <li><strong>SVN</strong>, Ant, Maven, Gradle.</li>
+                        </ul>
+                    </li>
+                    <li>Logiciels:
+                        <ul class="ul_niveau_2">
+                            <li><strong>Eclipse</strong>, <strong>Android Studio</strong>,</li>
+                            <li>MySQL, PostgreSQL.</li>
+                        </ul>
+                    </li>
+                    <li>Méthodes:
+                        <ul class="ul_niveau_2">
+                            <li>UML,</li>
+                            <li><strong>Agiles</strong> (Scrum),</li>
+                            <li><strong>Object-oriented programming</strong>.</li>
+                        </ul>
+                    </li>
+                    <li>Languages:
+                        <ul class="ul_niveau_2">
+                            <li>French: Native,</li>
+                            <li>English: Intermediate,</li>
+                            <li>Japanese: Beginner.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article>
+            <h1 class="entete_article">Hobbies</h1>
+
+            <div class="corps_article">
+
+                <ul class="ul_niveau_1">
+                    <li>Improving my skills:
+                    	<ul class="ul_niveau_2">
+                            <li>Programming,</li>
+                            <li>Foreign languages.</li>
+                        </ul>
+                    </li>
+                    <li>Sport:
+                        <ul class="ul_niveau_2">
+                            <li>Running,</li>
+                            <li>Workout.</li>
+                        </ul>
+                    </li>
+                    <li>Reading:
+                        <ul class="ul_niveau_2">
+                            <li>Fantastic,</li>
+                            <li>Studies,</li>
+                            <li>Life style.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+</div>
+
+<script>
+	var app = angular.module('app', []);
+		
+	app.controller('MainController', function($scope) {		
+		$scope.user = { birthday: new Date(1985,9,12), startJobDate: new Date(2010,4,31)};
+		
+		$scope.startDateRabbit = new Date(2011,9,1);
+			
+		$scope.calculateAge = function calculateAge(initialDate) { 
+			var ageDifMs = Date.now() - initialDate;
+			var ageDate = new Date(ageDifMs); // miliseconds from epoch
+			return Math.abs(ageDate.getUTCFullYear() - 1970);
+		}
+	});
+
+
+</script>
+</body>
+</html>
